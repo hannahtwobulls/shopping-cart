@@ -1,6 +1,11 @@
 import shop from '../api/shop'
 import * as types from '../constants/ActionTypes'
 
+export const openModal = () => dispatch => dispatch({type: types.SHOW_MODAL})
+
+export const closeModal = () => dispatch => dispatch({type: types.HIDE_MODAL})
+
+
 const receiveProducts = products => ({
   type: types.RECEIVE_PRODUCTS,
   products
